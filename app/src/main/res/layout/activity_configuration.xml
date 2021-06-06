@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfigurationActivity">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="24sp"
+        android:layout_marginTop="26dp"
+        android:text="@string/config_pt"/>
+
+    <TextView
+        android:id="@+id/tv_competency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_header"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Competência:"/>
+
+    <Spinner
+        android:id="@+id/sp_competency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tv_competency"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBottom="@+id/tv_competency"
+        android:layout_alignTop="@+id/tv_competency"/>
+
+    <TextView
+        android:id="@+id/tv_interests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interesses"
+        android:layout_below="@id/tv_competency"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"/>
+    <CheckBox
+        android:id="@+id/cb_health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_interests"
+        android:text="Saúde"/>
+    <CheckBox
+        android:id="@+id/cb_sports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cb_health"
+        android:text="Esportes"/>
+    <CheckBox
+        android:id="@+id/cb_movies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cb_sports"
+        android:text="Filmes"/>
+
+    <TextView
+        android:id="@+id/tv_msg_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/cb_movies"
+        android:text="Mensagem de emergência"/>
+
+    <EditText
+        android:id="@+id/edt_emergency_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:maxLength="150"
+        android:layout_below="@id/tv_msg_header"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/bt_save_config"
+        android:textColor="@color/colorButtonText"
+        android:background="@drawable/rounded_corners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_emergency_msg"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="salvar"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/tv_mdevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome Do Dispostivo - Competência"
+            android:ems="15"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/tv_label_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mdevice"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Estado:"/>
+
+        <TextView
+            android:id="@+id/tv_operation_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mdevice"
+            android:layout_alignBaseline="@id/tv_label_1"
+            android:layout_toEndOf="@+id/tv_label_1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Parado"/>
+
+        <TextView
+            android:id="@+id/tv_label_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_label_1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Dispositivos pendentes:"/>
+
+
+        <TextView
+            android:id="@+id/tv_pending_devices_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tv_label_3"
+            android:layout_alignBaseline="@id/tv_label_3"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:text="--"
+            />
+
+        <Button
+            android:id="@+id/btn_emergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_label_3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/bt_emergency_style"
+            android:text="emergência" />
+
+        <Button
+            android:id="@+id/btn_control_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_emergency"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/rounded_corners"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="iniciar operação"
+            android:textColor="@color/colorButtonText" />
+
+        <Button
+            android:id="@+id/btn_configurations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@+id/btn_control_operation"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/rounded_corners"
+            android:text="configurações" />
+
+
+        <TextView
+            android:id="@+id/tv_label_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_control_operation"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Comunidade de interesses:"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/neighboursListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"/>
+
+</RelativeLayout>
