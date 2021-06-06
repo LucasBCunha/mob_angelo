@@ -14,6 +14,3 @@ This app helps when an emergency event  happens. This event can be anything from
 For more information on how Stealth works check: [Stealth page](http://www.nr2.ufpr.br/~asbatista/stealth.html)
 
 For more information on how to use this app check [section 5 Handbook](./docs/handbook.md).
-
-## License
-**TODO: Add license**
