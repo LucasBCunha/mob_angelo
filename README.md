@@ -1,4 +1,4 @@
-# Stealth Based app
+# MobAngelo 
 This project is based on STEALTH (Social Trust-Based HEALTH Information Dissemination Control) protocol to implement the dissemination of sensitive health information in urban cenarios.
 
 # Table of contents
