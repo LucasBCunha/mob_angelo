@@ -9,7 +9,7 @@ This project is based on STEALTH (Social Trust-Based HEALTH Information Dissemin
 1. [Handbook](./docs/HANDBOOK.md)
 
 ## Introduction
-This app helps when an emergency event  happens. This event can be anything from a moment of diziness to a heart attack, in which the user needs help from other people phisically nearby. In this implementation events are simulated by the pressing of a button that will send a preconfigured message. But events could be determined by integrating with other devices (e.g a smart watch that measures heart rate).
+MobAngelo helps when an emergency event  happens. This event can be anything from a moment of diziness to a heart attack, in which the user needs help from other people phisically nearby. In this implementation events are simulated by the pressing of a button that will send a preconfigured message. But events could be determined by integrating with other devices (e.g a smart watch that measures heart rate).
 
 For more information on how Stealth works check: [Stealth page](http://www.nr2.ufpr.br/~asbatista/stealth.html)
 
