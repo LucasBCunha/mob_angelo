@@ -3,7 +3,7 @@ This project is based on STEALTH (Social Trust-Based HEALTH Information Dissemin
 
 # Table of contents
 1. [Introduction](#introduction)
-1. [License](#license)
+1. [Installation](#installation)
 1. [App development info](./docs/BASE_INFO.md)
 1. [Setting up the project](./docs/PROJECT_SETUP.md)
 1. [Handbook](./docs/HANDBOOK.md)
@@ -14,3 +14,14 @@ MobAngelo helps when an emergency event  happens. This event can be anything fro
 For more information on how Stealth works check: [Stealth page](http://www.nr2.ufpr.br/~asbatista/stealth.html)
 
 For more information on how to use this app check [section 5 Handbook](./docs/handbook.md).
+
+# Installation
+
+For a video (in pt-br) on how to install refer to [here]()
+1. From you android smartphone access this repository
+1. Download `mob_angelo.apk` that is present in the root of this project
+1. Execute this apk and follow the steps to install the app
+  1. The system might prompt you to allow foreign sources when installing the app 
+3. Finished!
+
+For usage tips 
