@@ -17,11 +17,12 @@ For more information on how to use this app check [section 5 Handbook](./docs/ha
 
 # Installation
 
-For a video (in pt-br) on how to install refer to [here]()
 1. From you android smartphone access this repository
 1. Download `mob_angelo.apk` that is present in the root of this project
 1. Execute this apk and follow the steps to install the app
   1. The system might prompt you to allow foreign sources when installing the app 
-3. Finished!
+3. Done! :)
 
-For usage tips 
+If you want to build from source check [Setting up the project](./docs/PROJECT_SETUP.md)
+For usage tips refer to [Handbook](./docs/HANDBOOK.md)
+
